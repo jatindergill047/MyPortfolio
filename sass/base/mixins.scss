@@ -1,0 +1,12 @@
+@mixin hero ($url) {
+    background: linear-gradient(
+        transparent,
+        rgba(255, 255, 255, 0.014) ),
+        url($url);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 10%;
+    width: 100%;
+    height: 1100px;
+}

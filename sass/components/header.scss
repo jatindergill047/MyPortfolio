@@ -1,0 +1,28 @@
+header {
+    background: transparent;
+    width: 100%;
+}
+nav {
+    height: 100px;
+    ul {
+        // margin: 0 auto;
+        // width: 90%;
+        height: 100px;
+    } 
+    li {
+
+    }
+    a{
+        color: $color-1;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    a:hover {
+        background: rgba(255, 255, 255, 0.89);
+    }
+    span {
+        font-size: 20px
+
+    }
+}
+

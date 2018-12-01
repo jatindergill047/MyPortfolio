@@ -1,18 +1,44 @@
-body {
-  background: red;
-  margin: 50px; }
+h1 {
+  background: purple;
+  color: #F9FFF6;
+  margin: 0;
+  font-family: "Poppins", sans-serif; }
+
+ul {
+  list-style: none; }
 
 header {
+  background: transparent;
+  width: 100%; }
+
+nav {
+  height: 100px; }
+  nav ul {
+    height: 100px; }
+  nav a {
+    color: #F9FFF6;
+    text-decoration: none;
+    text-transform: uppercase; }
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.89); }
+  nav span {
+    font-size: 20px; }
+
+.hero {
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.014)), url("../img/hero-img.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 10%;
   width: 100%;
-  height: 150px;
-  background: steelblue; }
+  height: 1100px; }
 
 main {
+  background: red;
   width: 100%;
-  height: 800px;
-  background: yellow; }
+  height: 1500px; }
 
-.ft {
+footer {
+  background: green;
   width: 100%;
-  height: 300px;
-  background: green; }
+  height: 200px; }
