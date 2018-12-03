@@ -1,28 +1,43 @@
 header {
-    background: transparent;
+    background: red;
     width: 100%;
 }
 nav {
+    background: black;
+    width: 100%;
     height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
     ul {
-        // margin: 0 auto;
-        // width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        width: 90%;
         height: 100px;
     } 
     li {
-
+        transition: transform 1.2s;
+    }
+    li:hover {
+       transform: scale(1.2);
     }
     a{
+        font-size: 18px;
         color: $color-1;
         text-decoration: none;
         text-transform: uppercase;
+        padding: 10px 25px;
     }
     a:hover {
-        background: rgba(255, 255, 255, 0.89);
+       color: $color-2;
+       text-decoration: none;
     }
-    span {
-        font-size: 20px
+}
 
+@media screen and (max-width: 720px) {
+    a {
+        font-size: 12px;
+        
     }
 }
 

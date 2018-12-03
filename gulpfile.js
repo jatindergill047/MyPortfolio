@@ -31,7 +31,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('browserSync', function() {
     browserSync.init({
       server: {
-        proxy: 'file:///D:/jatinder%20singh/Portfolio/MyPortfolio/index.html'
+        proxy: 'file:///D:/jatinder%20singh/portfolio/MyPortfolio'
       },
     })
   })

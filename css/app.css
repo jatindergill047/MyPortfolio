@@ -5,24 +5,43 @@ h1 {
   font-family: "Poppins", sans-serif; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
 header {
-  background: transparent;
+  background: red;
   width: 100%; }
 
 nav {
-  height: 100px; }
+  background: black;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 100; }
   nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
     height: 100px; }
+  nav li {
+    transition: transform 1.2s; }
+  nav li:hover {
+    transform: scale(1.2); }
   nav a {
+    font-size: 18px;
     color: #F9FFF6;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 10px 25px; }
   nav a:hover {
-    background: rgba(255, 255, 255, 0.89); }
-  nav span {
-    font-size: 20px; }
+    color: #fc9b4c;
+    text-decoration: none; }
+
+@media screen and (max-width: 720px) {
+  a {
+    font-size: 12px; } }
 
 .hero {
   background: linear-gradient(transparent, rgba(255, 255, 255, 0.014)), url("../img/hero-img.jfif");
@@ -31,7 +50,18 @@ nav {
   background-attachment: fixed;
   background-position: 50% 10%;
   width: 100%;
-  height: 1100px; }
+  height: 900px; }
+
+li {
+  transition: transform 1.2s;
+  margin: 20px; }
+
+li:hover {
+  transform: scale(1.5); }
+
+a {
+  font-size: 36px;
+  padding: 20px 25px; }
 
 main {
   background: red;

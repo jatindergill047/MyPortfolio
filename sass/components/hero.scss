@@ -1,3 +1,15 @@
 .hero {
     @include hero('../img/hero-img.jfif');
 }
+li {
+    transition: transform 1.2s;
+    margin: 20px;
+}
+li:hover {
+   transform: scale(1.5);
+}
+a{
+    font-size: 36px;
+    padding: 20px 25px;
+}
+
