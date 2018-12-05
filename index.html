@@ -12,14 +12,35 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="d-flex align-items-center justify-content-center">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Contact me</a></li>
-                <li><a href="#">blog</a></li>
-            </ul>
+        <nav class="px-1 d-flex align-items-center">
+            <div class="logo mr-auto">
+                <img src="img/mylogo.png" alt="jatinder Singh">
+            </div>
+            <div class="desktop-links">
+                <ul class="d-flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Contact me</a></li>
+                    <li><a href="#">blog</a></li>
+                </ul>
+            </div>
+            <span class="navbar-toggle text-white" id="js-navbar-toggle">
+                <i class="fas fa-bars" onclick="toggleSlidebar()"></i>
+            </span>
+            <span class="navbar-toggle close text-white" id="js-navbar-toggle">
+                <i class="fas fa-times" onclick="toggleSlidebar()"></i>
+            </span>
+            <div class="mobile-links" id="mobile-links">
+                <!-- <i class="fas fa-times fa-2x hamburger-icon" onclick='toggleSlidebar()'></i>          -->
+                <ul class="d-flex">
+                    <li><a href="#">HomeM</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Contact me</a></li>
+                    <li><a href="#">blog</a></li>
+                </ul>
+            </div>            
         </nav>
         <div class="hero card" alt="Image of Web developer"></div>
             <div class="card-img-overlay text-white d-flex flex-column justify-content-center align-items-center">
@@ -40,5 +61,6 @@
     <footer class="ft">
         <h1>This is Footer</h1>
     </footer>
+    <script src="js/logic.js"></script>
 </body>
 </html>
