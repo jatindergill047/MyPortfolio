@@ -1,15 +1,26 @@
 .hero {
     @include hero('../img/hero-img.jfif');
 }
-li {
+.sociallinks {
+    li {
     transition: transform 1.2s;
-    margin: 20px;
+    margin: 30px;
+    // background: red;
 }
 li:hover {
    transform: scale(1.5);
-}
+} 
 a{
-    font-size: 4vw;
-    // padding: 20px 25px;
-}
+    font-size: 34px;
+    color: $color-1;
 
+}
+a:hover {
+    color: $color-2;
+}
+}
+@media screen and (max-width: 540px) {
+    .sociallinks li {
+        margin: 15px;       
+    }
+}
