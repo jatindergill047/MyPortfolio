@@ -1,7 +1,3 @@
-//line Spacing
-.ls-1 {
-    line-height: 1.3;
-}
 h1 {
     background: rgb(255, 255, 255);
     color: $color-back;
@@ -22,3 +18,6 @@ ul {
     font-size: 24px;
 }
 
+p {
+    line-height: 1.3;
+}

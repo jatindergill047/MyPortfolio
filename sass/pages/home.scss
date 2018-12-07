@@ -94,6 +94,11 @@
 // .portfolio .card-content p {
 //     margin: 2px;
 // }
+@media screen and (max-width: 420px) {
+    p {
+        line-height: 1;
+    }
+}
 @media screen and (max-width: 620px) {
     .portfolio .wrapper {
        flex-direction: column;
