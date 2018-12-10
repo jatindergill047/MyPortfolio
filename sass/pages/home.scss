@@ -3,39 +3,25 @@
     color: $color-1;
     section {
     width: 100%;
-    // padding: 20vh 0;
-    height: 100vh;
+    padding: 20vh 0;
+    // height: 100vh;
     }
     // section:nth-child(1) {
     //     background: rgb(233, 233, 233);
     // }
     section:nth-child(2) {
         background: rgb(47, 134, 184);
+        
     }
     section:nth-child(3) {
         @include technologies();
-        .wrapper {
-            
-        }
         .tech-div-1 {
             width: 100%;
-        }
-        // .tech-logos {
-        //     width: 100%;    
-        //     display: flex;
-        // }
-        .tech-logos img {
-            // width: 100%;
-            // height: 20vh;
-            background: lightgray;
-            margin: 10px;
-            // padding: 20PX;
-        }      
-        
+        }    
     }
     
     section:nth-child(4) {
-        background: rgb(184, 47, 47);
+        @include technologies();
         .myMap{
             width: 100%;
             height: 450px;
