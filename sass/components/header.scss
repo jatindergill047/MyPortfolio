@@ -18,7 +18,7 @@ header {
     right: -170px ;
     transition: all ease-out 0.4s;
     width: 170px;
-    // background: $color-2;
+    background: #2e2e2e;
     li {
         padding: 10px 0;
         border-bottom: 1px solid rgb(248, 248, 248);
@@ -30,12 +30,12 @@ nav {
     position: fixed;
     top: 0;
     z-index: 1000;
-    background: black;
+    background: #2e2e2e;
     
     ul {
         overflow: hidden;        
         margin: 0;
-        background: black;
+        // background: black;
          
     } 
     li {
@@ -97,7 +97,7 @@ nav {
 	width:80%;    
 	background:#ffffff;
 	border-radius:m 15px;
-	transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.4s;
+	transition: all cubic-bezier(0.4, 0, 1, 1) 0.3s;
 }
 
 .line01 {
@@ -113,10 +113,10 @@ nav {
 }
 
 .menu.close .line01 {
-    top:46%;
+    top:47%;
     // left: 2%;
     background: red;
-    // transform:rotate(90deg);
+    // transform:rotate(180deg);
     
     // display: none;
 
@@ -128,10 +128,11 @@ nav {
 	top:49%;
 }
 .menu.close .line03 {
-    // transform:rotate(90deg);
+    // transform:rotate(180deg);
     // transform:rotate(0deg);
-    top:52%;
+    top:51%;
     // left: -2%;
+    
 
     background: rgb(255, 15, 15);
 

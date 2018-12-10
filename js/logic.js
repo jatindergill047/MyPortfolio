@@ -10,3 +10,14 @@ $("#wrapper").click( function() {
 	$(".menu").toggleClass("close");
 });
 
+function initMap(){
+	var loc = { lat: 51.0486, lng: -114.0708};
+	var map = new google.maps.Map(document.getElementById("map"), {
+		zoom: 12,
+		center: loc
+	});
+	var marker = new google.maps.Marker({
+		position: loc,
+		map: map
+	});
+}
