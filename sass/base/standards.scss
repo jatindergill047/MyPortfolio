@@ -1,8 +1,13 @@
-h1 {
-    // background: rgb(255, 255, 255);
-    // color: $color-back;
+*{
     margin: 0;
+    padding: 0;
+}
+h1 {
+    background: rgb(255, 255, 255);
+    // color: black;
+    // margin: 0;
     font-family: $font-family;
+    padding: 4px;
 }
 ul {
     list-style: none;
