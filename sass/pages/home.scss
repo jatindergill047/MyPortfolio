@@ -2,7 +2,7 @@ main {
     color: $color-1;
     section {
         width: 100%;
-        padding: 10vh 0 5vh 0;
+        padding: 10vh 0 10vh 0;
         border-top: 0.5px solid white;
     }
     .whoiam{
@@ -11,15 +11,77 @@ main {
     .linear-gradient-background{
         @include linearGradientBackground();
         .portfolio{
-            
+            .card {
+                margin: 10px;
+                width: 100%;
+                border-radius: 15px;
+                border: none;
+                 img{
+                    border-radius: 10px;
+                    box-shadow: 1px 2px 10px 1px #2c2c2cf7;
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden;    
+                }
+                .porfolio-project-name{
+                    position: absolute;
+                    bottom: 0;
+                    // margin-left: 10px;
+                    // display: block;
+                    color: black;
+                    width: 100%;
+                    height: 100%;
+                    transition: 1s;            
+
+                }
+                .card-content {
+                    @include cardImgGradient();
+                    border-radius: 10px;
+                    color: black;
+                    position: absolute;
+                    padding-top: 5px;
+                    width: 100%;
+                    height: 100%;
+                    transition: 1.5s;
+                    opacity: 0;
+                    min-width: 200px;
+                    // transform: translate(0px, 60px);
+                    p{
+                        padding: 15px;
+                        margin: 0;
+                        text-align: center;
+                    }
+                    a{
+                        padding: 10px 15px;
+                        border: 1px solid black;
+                        color: black;
+                        text-decoration: none;
+                        cursor: pointer;
+                        i{
+                            margin-left: 5px;
+                        }
+                    }
+                    a:hover {
+                        background: black;
+                        color: $color-1;
+                    }
+                }               
+             }
+             .card:hover .card-content {
+                opacity: 1;
+            }
+             .card:hover .porfolio-project-name {
+                opacity: 0.1;
+            }
+                        
         }
         .technologies{
     
-        }
+        }    
         .map-section{
             .myMap{
                 width: 100%;
-                height: 450px;    
+                height: 450px;
             }
         }
     } 
@@ -30,129 +92,18 @@ main {
     }
 }
 
-// .technologies {
-//     @include technologies();
-  
-//     color: $color-1;
-//     section {
-//     width: 100%;
-//     height: 100vh;
-//     }
-//     // section:nth-child(1) {
-//     //     background: rgb(233, 233, 233);
-//     // }
-//     section:nth-child(2) {
-//         background: rgb(47, 134, 184);
-//     }
-//     section:nth-child(3) {
-//         background: rgb(47, 184, 100);
-//     }
-//     section:nth-child(4) {
-//         background: rgb(184, 47, 47);
-//     }
-//     section:nth-child(5) {
-//         background: rgb(184, 148, 47);
-//     }    
-// }
-
-// @media screen and (max-width: 540px) {
-//     .whoiam .fs-22 {
-//         font-size: 16px;        
-//     }
-// }
-
-
-
-
-
-// * ****** Clothing  ****** *
-
-// .grid-row {
-//     margin: 10px 0 25px 0;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-
-// .portfolio .grid {
-//     width: 90%;
-//     margin: 10px auto;
-//     padding: 10px 0px;
-// }
-.portfolio {
-    height: 100vh;
-}
-
-// .portfolio .wrapper-flex {  
-//     display: flex;
-//     flex-direction: row;   
-//     // margin-bottom: 15px;
-// }
-.portfolio .card {
-   color: black;
-   margin: 10px;
-//    display: flex;
-//    flex-direction: column;
-   border: none;
-   box-shadow: 1px 2px 10px 1px #4a4a4af7;
-//    width: 50%;
-}
-.portfolio .card img {
-    border-radius: 2px;
-}
-// .portfolio .card a{
-//     width: 100%
-// }
-  
-// .only-1-img-in-row {    
-//     width: 100%;
-// }
-// .portfolio .card img {
-//     width: 100%;     
-// }
-// .portfolio .card-content {
-//     padding: 5px 10px;
-//     color: rgb(0, 0, 0);
-// }
-// .portfolio .card-content h4 {
-//     text-align: center;
-//     margin: 0px;
-//     text-transform: uppercase;    
-// }
-// .portfolio .card-content h3{
-//     text-align: right;
-//     margin: 0px;    
-// }
-// .portfolio .card-content p {
-//     margin: 2px;
-// }
 @media screen and (max-width: 420px) {
     p {
-        line-height: 1;
+        line-height: 1.2;
     }
 }
 @media screen and (max-width: 620px) {
     .portfolio .wrapper {
        flex-direction: column;
     }
-    .portfolio .card {
-       width: 80%;
-       margin: 0 auto;
-    }
-    .portfolio .hide-card-2  {
-        display: none;
-    }
 }
-
-// @media screen and (max-width: 900px) {
-//     .portfolio .hide-card-4  {
-//        display: none;
-//     }
-// }
-@media screen and (max-width: 800px) {
-    .portfolio .hide-card-3  {
-       display: none;
+@media screen and (max-width: 780px) {  
+    .portfolio .hide-card  {
+        display: none;
     }
 }

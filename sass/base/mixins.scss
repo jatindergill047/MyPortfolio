@@ -23,6 +23,10 @@
     background:  linear-gradient(
         180deg,
         #333333, #000000), url();
+        // background:  linear-gradient(
+    //     180deg,
+    //     rgba(217, 176, 176, 0.69),
+    //     rgba(255, 148, 140, 0.690)), url();
     // background-size: cover;
     // background-repeat: no-repeat;
     // background-attachment: fixed;
@@ -30,3 +34,18 @@
     width: 100%;
     // height: 400px;
 }
+// @mixin cardImgGradient() {
+//     background: linear-gradient(45deg,#833ab4af, #fd1d1daf, #fcb045af);
+// }
+@mixin cardImgGradient() {
+    background: linear-gradient(
+        90deg, 
+        rgba(176, 214, 217, 0.690),
+        rgba(255, 148, 140, 0.690));
+    // background: linear-gradient(
+    //     45deg, 
+    //     rgba(124, 124, 124, 0.631), 
+    //     rgba(195, 195, 195, 0.631), 
+    //     rgba(58, 58, 58, 0.631));
+}
+
