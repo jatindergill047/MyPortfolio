@@ -1,0 +1,17 @@
+.contactMeMain{
+    .contactMeForm {
+        width: 50%;
+        // background: red;
+        label {
+           font-weight: bold;
+           font-size: 22px;
+           margin: 0px;
+        }
+        input {
+            padding:  5px 10px;
+            font-size: 20px;
+            border: none;
+            // border-bottom: 1px solid black;
+        }
+    }   
+}

@@ -3,7 +3,7 @@
 
 // }
 AOS.init({
-    duration: 2000,
+    duration: 2200,
 });
 $("#wrapper").click( function() {
 	$(".mobile-links").toggleClass("active");

@@ -1,11 +1,16 @@
-footer {
-    
+footer {    
     background: $color-1;
     width: 100%;
     // height: 40vh;
-    i {
-        margin: 8px 15px;
+    a{
+        // text-decoration: none;
+        // cursor: pointer;
+        color: black;
+        i {
+            margin: 8px 15px;
+        }
     }
+    
 }
 .copyright {
     @include linearGradientBackground();
