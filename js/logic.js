@@ -21,3 +21,31 @@ function initMap(){
 		map: map
 	});
 }
+$(document).ready(function(){
+	$('.error').hide();
+	$('.invalid_email').hide();
+	$('#submit').click(function(){
+		var name = $('#name').val();
+		var email = $('#email').val();
+		if(name == ''){
+			$('#name').next().show();
+			return false;
+		}
+		if(email == ''){
+			$('#email').next().show();
+			return false;
+		}
+		if(IsEmail(email) == false){
+			$('.invalid_email').show();
+			return false;
+		}
+	});
+});
+function IsEmail(email) {
+	var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	if(!regex.test(email)) {
+	  return false;
+	}else{
+	  return true;
+	}
+  }

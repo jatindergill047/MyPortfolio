@@ -221,6 +221,9 @@ footer {
     border: 1.5px solid black;
     text-decoration: none;
     outline: none; }
+  .contactMeMain .contactMeForm span {
+    color: #c30000;
+    font-style: italic; }
   .contactMeMain .contactMeForm textarea {
     padding: 5px 10px;
     font-size: 18px;

@@ -48,14 +48,17 @@
         <div class="contactMeMain">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h1>Get in touch</h1>
-                <form class="contactMeForm" action="connect-form.php" method="post">
+                <form class="contactMeForm" action="../connected-form.php" method="post">
                     <div class="d-flex flex-column m-3">
                         <label for="name">Your Full Name</label>
-                        <input type="text" name="name" placeholder="Full name">
+                        <input type="text" name="name" id="name" placeholder="Full name">
+                        <span class="error">Please enter your name</span>
                     </div>
                     <div class="d-flex flex-column m-3">
                         <label for="email">Your Email</label>
-                        <input type="text" name="email" placeholder="example : bob@gmail.com ">
+                        <input type="text" name="email" id="email" placeholder="example : bob@gmail.com">
+                        <span class="error">Please enter your email</span>
+                        <span class="invalid_email">Please enter a valid email</span>
                     </div>
                     <div class="d-flex flex-column m-3">
                         <label for="subjec">Subject</label>
@@ -65,7 +68,7 @@
                         <textarea name="message" rows="5" placeholder="Write your message here" cols="80"></textarea>
                     </div>
                     <div class="d-flex flex-column m-3">
-                        <button type="submit" name="submit">Send Mail <i class="fas fa-envelope ml-1"></i></button>
+                        <button type="submit" id="submit" name="submit">Send Mail <i class="fas fa-envelope ml-1"></i></button>
                     </div>
                 </form>
             </div>
