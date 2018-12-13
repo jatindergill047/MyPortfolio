@@ -60,5 +60,19 @@
      .card:hover .porfolio-project-name {
         opacity: 0.1;
     }
+    #row-of-3{
+        display: block;
+    }
+    #row-of-2{
+        display: none;
+    }
                 
+}
+@media screen and (min-width:620px) and(max-width: 900px){
+    .portfolio #row-of-3{
+        display: none;
+    }
+    .portfolio #row-of-2{
+        display: block;
+    }
 }

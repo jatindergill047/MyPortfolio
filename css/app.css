@@ -290,7 +290,7 @@ main {
   .portfolio .wrapper {
     flex-direction: column; } }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
   .portfolio .hide-card {
     display: none; } }
 
@@ -340,3 +340,15 @@ main {
 
 .portfolio .card:hover .porfolio-project-name {
   opacity: 0.1; }
+
+.portfolio #row-of-3 {
+  display: block; }
+
+.portfolio #row-of-2 {
+  display: none; }
+
+@media screen and (min-width: 620px) and (max-width: 900px) {
+  .portfolio #row-of-3 {
+    display: none; }
+  .portfolio #row-of-2 {
+    display: block; } }
