@@ -1,4 +1,5 @@
 .portfolio{
+    // min-height: 100vh;
     .card {
         margin: 10px;
         width: 100%;
@@ -51,7 +52,6 @@
                     margin-left: 5px;
                 }
             }
-            
         }               
     }
      .card:hover .card-content {
@@ -62,13 +62,14 @@
     }
     #row-of-3{
         display: block;
+        width: 100%;
     }
     #row-of-2{
         display: none;
-    }
-                
+        width: 100%;
+    }                
 }
-@media screen and (min-width:620px) and(max-width: 900px){
+@media screen and (min-width:620px) and(max-width: 900px) {
     .portfolio #row-of-3{
         display: none;
     }

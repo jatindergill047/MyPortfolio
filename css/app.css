@@ -49,6 +49,9 @@ p {
 .headerheight {
   height: 75px; }
 
+main {
+  min-height: 100vh; }
+
 header {
   width: 100%; }
 
@@ -169,7 +172,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 50% 10%;
+  background-position: 70% 50%;
   width: 100%;
   height: 100vh; }
   .hero .sociallinks {
@@ -198,7 +201,7 @@ footer {
       margin: 8px 15px; }
 
 .copyright {
-  background: linear-gradient(180deg, #333333, #000000), url();
+  background: #3b3b3b;
   width: 100%;
   color: #ffffff; }
 
@@ -263,16 +266,16 @@ main {
   main section {
     width: 100%;
     padding: 10vh 0 10vh 0;
-    border-top: 0.5px solid white; }
+    border-top: 0.5px solid #080808; }
   main .whoiam {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.459)), url("../img/whoiam.jfif");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 50% 10%;
+    background-position: center;
     width: 100%; }
   main .linear-gradient-background {
-    background: linear-gradient(180deg, #333333, #000000), url();
+    background: #3b3b3b;
     width: 100%; }
     main .linear-gradient-background .map-section .myMap {
       width: 100%;
@@ -342,13 +345,57 @@ main {
   opacity: 0.1; }
 
 .portfolio #row-of-3 {
-  display: block; }
+  display: block;
+  width: 100%; }
 
 .portfolio #row-of-2 {
-  display: none; }
+  display: none;
+  width: 100%; }
 
 @media screen and (min-width: 620px) and (max-width: 900px) {
   .portfolio #row-of-3 {
     display: none; }
   .portfolio #row-of-2 {
     display: block; } }
+
+.services .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px 1px #2c2c2c8f;
+  background: black;
+  color: #ffffff;
+  max-width: 400px; }
+  .services .card .service-name {
+    padding: 10px 5px;
+    border-bottom: 1px solid #5a5a5a; }
+
+.services #row-of-3 {
+  display: block;
+  width: 100%; }
+
+.services #row-of-2 {
+  display: none;
+  width: 100%; }
+
+@media screen and (min-width: 620px) and (max-width: 900px) {
+  .services #row-of-3 {
+    display: none; }
+  .services #row-of-2 {
+    display: block; } }
+
+@media screen and (max-width: 620px) {
+  .services .f-col {
+    flex-direction: column; } }
+
+.about {
+  background: url("../img/about-me-background.gif");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .about p {
+    color: #ffffff;
+    font-size: 28px; }
+  .about a, .about i {
+    font-size: 24px; }
+  @media screen and (max-width: 620px) {
+    .about p {
+      font-size: 24px; } }

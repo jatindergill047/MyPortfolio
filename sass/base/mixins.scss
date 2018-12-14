@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 50% 10%;
+    background-position: 70% 50%;
     width: 100%;
     height: 100vh;
 }
@@ -14,14 +14,21 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 50% 10%;
+    background-position: center;
     width: 100%;
     // height: 900px;
 }
+@mixin aboutmebackground ($bgImg) {
+    background: url($bgImg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-position: 50% 10%;
+    // width: 100%;
+    // height: 900px;
+}
 @mixin linearGradientBackground() {
-    background:  linear-gradient(
-        180deg,
-        #333333, #000000), url();
+    background:  rgb(59, 59, 59);
         // background:  linear-gradient(
     //     180deg,
     //     rgba(217, 176, 176, 0.69),
@@ -47,4 +54,19 @@
     //     rgba(195, 195, 195, 0.631), 
     //     rgba(58, 58, 58, 0.631));
 }
+// @mixin serviceCardGradient() {
+//     background: linear-gradient(
+//         360deg, 
+//         #eecfcf,
+//         #f7eaea,
+//         #ffffff,
+//         #d9e7ee,
+//         #c2dae7);
+//         // #ee9ca7 → #ffdde1
+//     // background: linear-gradient(
+//     //     45deg, 
+//     //     rgba(124, 124, 124, 0.631), 
+//     //     rgba(195, 195, 195, 0.631), 
+//     //     rgba(58, 58, 58, 0.631));
+// }
 
